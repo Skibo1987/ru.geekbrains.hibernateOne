@@ -9,4 +9,6 @@ public interface UserDao {
     void save(User user);
     void update(Long id, String name);
 
+    void testCashe();
+
 }
