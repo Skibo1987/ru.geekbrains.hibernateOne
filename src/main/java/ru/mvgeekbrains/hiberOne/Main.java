@@ -12,10 +12,11 @@ public class Main {
         sessionFactoryUtils.init();
         try {
             UserDao userDao = new UserDaoImpl(sessionFactoryUtils);
-            User user = new User("Max", 89);
-            userDao.save(user);
-            userDao.update(4l, "Ivan");
-            System.out.println(userDao.findAll());
+//            User user = new User("Max", 89);
+//            userDao.save(user);
+//            userDao.update(4l, "Ivan");
+//            System.out.println(userDao.findAll());
+            userDao.testCashe();
 
 //            Session session = factory.getCurrentSession();
 //            session.beginTransaction();
